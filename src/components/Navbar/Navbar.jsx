@@ -37,10 +37,8 @@ const Navbar = () => {
         <ul>
           <li>
             <Link
-              to="/home"
-              className={
-                location.pathname === "/" && !location.hash ? "active" : ""
-              }
+              to="/"
+              className={location.pathname === "/" && !location.hash ? "active" : ""}
               onClick={() => setIsMenuOpen(false)}
             >
               Home

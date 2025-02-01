@@ -1,4 +1,5 @@
 {
+  "homepage": "https://rncmanipal.github.io/RNC_Manipal_Website_V2/",
   "name": "rnc-web",
   "private": true,
   "version": "0.0.0",
@@ -7,10 +8,11 @@
     "dev": "vite  --host",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^6.6.0",
+    "@fortawesome/fontawesome-free": "^6.7.2",
     "gsap": "^3.12.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -26,6 +28,7 @@
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.13",
     "file-loader": "^6.2.0",
+    "gh-pages": "^6.3.0",
     "globals": "^15.11.0",
     "vite": "^5.4.9"
   }
