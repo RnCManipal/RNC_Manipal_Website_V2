@@ -13,7 +13,7 @@ import ScrollToTop from './utils/ScrollToTop';
 
 function App() {
   return (
-    <BrowserRouter basename="/RNC_Manipal_Website_V2">
+    <BrowserRouter>
       <ScrollToTop />
       <Navbar />
       
