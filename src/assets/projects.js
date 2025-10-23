@@ -146,7 +146,8 @@ const projectassets = {
  
 
 };
-const projectList = [
+// Ongoing Projects (Current/Active)
+const ongoingProjects = [
   {
     projectTitle: "M.U.C - Multipurpose Universal Chassis",
     projectUrl: "https://www.youtube.com/embed/bgFyJudC_60?si=8IYn3bPeO4vSSSti",
@@ -155,6 +156,22 @@ const projectList = [
     members: "Anirudh Agarwal, Gnana sai Pendyala, Akshay Prabhu, Aman Agrawal",
     link: "#",
   },
+  {
+    projectTitle: "Micro-Mouse",
+    imageUrl: projectassets.microMouse,
+    projectType: "Technoxian Bot",
+    info: "An autonomous robot that navigates through a maze to find the quickest route."
+  },
+  {
+    projectTitle: "Line Follower Bot",
+    imageUrl: projectassets.lineFollower,
+    projectType: "Technoxian Bot",
+    info: "A robot that follows a predetermined path using sensors to detect lines on the ground."
+  }
+];
+
+// Legacy Projects (Historical/Completed)
+const legacyProjects = [
   {
     projectTitle: "Automated Luggage Handling System",
     projectUrl: "https://www.youtube.com/embed/nK6iBMrzzYU",
@@ -187,11 +204,7 @@ const projectList = [
     members: "Rushil Jhaveri",
     link: "#",
   },
-  
- 
-];
-const projectimg = [
-    {
+  {
       projectTitle: "Smart Helmet",
       imageUrl: projectassets.helmet, 
       projectType: "Vedanth 13.0",
@@ -216,22 +229,10 @@ const projectimg = [
       link: "#",
     },
     {
-      projectTitle: "Line Follower Bot",
-      imageUrl: projectassets.lineFollower,
-      projectType: "Technoxian Bot",
-      info: "A robot that follows a predetermined path using sensors to detect lines on the ground."
-    },
-    {
       projectTitle: "Cosmo Clench Bot",
       imageUrl: projectassets.cosmoClench,
       projectType: "Technoxian Bot",
       info: "A bot designed to perform clenching actions for picking and placing objects."
-    },
-    {
-      projectTitle: "Micro-Mouse",
-      imageUrl: projectassets.microMouse,
-      projectType: "Technoxian Bot",
-      info: "An autonomous robot that navigates through a maze to find the quickest route."
     },
     {
       projectTitle: "FPG BOT",
@@ -518,4 +519,4 @@ const projectimg = [
     }
     
   ];
-export  {projectassets,projectList,projectimg};
+export {projectassets, ongoingProjects, legacyProjects};

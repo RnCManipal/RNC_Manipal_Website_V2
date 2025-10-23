@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Projects.css";
 import Header2 from "../Header/Header2";
-import { projectList, projectimg } from "../../assets/projects.js";
+import { ongoingProjects, legacyProjects } from "../../assets/projects.js";
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -16,53 +16,80 @@ const Projects = () => {
     <div>
       <Header2 title="Project Gallery" subtitle="Welcome to our " />
       <div className="projects">
-        <div className="project-container">
-          {projectList.map((project, index) => (
-            <div className=" project" key={index}>
-              <div className="project-title">{project.projectTitle}</div>
-              <div className="images">
-                
-                <div className="iframe-container">
-                  <iframe
-                    width="300"
-                    height="250"
-                    src={project.projectUrl}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        {/* Ongoing Projects Section */}
+        <div className="projects-section">
+          <div className="section-heading">
+            <h2>Ongoing Projects</h2>
+          </div>
+          <div className="project-container hovercontain">
+            {ongoingProjects.map((project, index) => (
+              <div className="project project2" key={index}>
+                <div className="project-image iframe-container">
+                  {project.projectUrl ? (
+                    <iframe
+                      width="300"
+                      height="250"
+                      src={project.projectUrl}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
-                  ></iframe>
+                    ></iframe>
+                  ) : (
+                    <img src={project.imageUrl} alt={project.projectTitle} />
+                  )}
+                </div>
+                <div className="project-title">{project.projectTitle}</div>
+                <div className="project-details">
+                  <div className="project-type project-type2">
+                    {project.projectType}
+                  </div>
+                  <div
+                    className="button button2"
+                    onClick={() => handleReadMoreClick(project)}
+                  >
+                    Read more
+                  </div>
                 </div>
               </div>
-              <div className="project-type">{project.projectType}</div>
-              <div
-                className="button"
-                onClick={() => handleReadMoreClick(project)}
-              >
-                Read more
-              </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-        <div className="project-container hovercontain">
-          {projectimg.map((project, index) => (
-            <div className="project project2" key={index}>
-              <div className="project-image iframe-container">
-              
-                <img src={project.imageUrl} alt={project.projectTitle} />
-              </div>
-              <div className="project-title">{project.projectTitle}</div>
-              <div className="project-details">
-                <div className="project-type project-type2">
-                  {project.projectType}
+
+        {/* Legacy Projects Section */}
+        <div className="projects-section">
+          <div className="section-heading">
+            <h2>Legacy Projects</h2>
+          </div>
+          <div className="project-container hovercontain">
+            {legacyProjects.map((project, index) => (
+              <div className="project project2" key={index}>
+                <div className="project-image iframe-container">
+                  {project.projectUrl ? (
+                    <iframe
+                      width="300"
+                      height="250"
+                      src={project.projectUrl}
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
+                  ) : (
+                    <img src={project.imageUrl} alt={project.projectTitle} />
+                  )}
                 </div>
-                <div
-                  className="button button2"
-                  onClick={() => handleReadMoreClick(project)}
-                >
-                  Read more
+                <div className="project-title">{project.projectTitle}</div>
+                <div className="project-details">
+                  <div className="project-type project-type2">
+                    {project.projectType}
+                  </div>
+                  <div
+                    className="button button2"
+                    onClick={() => handleReadMoreClick(project)}
+                  >
+                    Read more
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
         {selectedProject && (
           <div className="modal-overlay" onClick={closeModal}>

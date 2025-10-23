@@ -9,6 +9,15 @@ import JasonImage from "./images/team/2023-24/jason.jpg";
 import PurbashaImage from "./images/team/2023-24/purbasha.jpg";
 import AvyakthaImage from "./images/team/2023-24/avyaktha.jpg";
 
+// 2026 Board Images
+import AayushiImage from './images/team/2025-26/aayushi.png';
+import ShashankImage from './images/team/2025-26/shashank.jpg';
+import OjasviImage from './images/team/2025-26/ojasvi.jpg';
+import KartikeyImage from './images/team/2025-26/kartikey.jpg';
+import SharaddhaImage from './images/team/2025-26/shraddha.jpg';
+import ShreyanshImage from './images/team/2025-26/shreyansh.jpg';
+import SamagyaImage from './images/team/2025-26/samagya.jpg';
+
 // 2025 Board Images
 import AkshayImage from './images/team/2024-25/akshay.png';
 import GnanaSaiImage from './images/team/2024-25/gnana_sai.png';
@@ -68,79 +77,125 @@ import VishnuImage from './images/team/2019-20/member11.jpg';
 
 const teamMembers = [
   {
-    firstName: "Akshay",
-    lastName: "Gopathi",
+    firstName: "Aayushi",
+    lastName: "Gupta",
     position: "Team Leader",
-    imageUrl: AkshayImage,
-    linkedIn: "https://www.linkedin.com/in/akshayy49?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    imageUrl: AayushiImage,
+    linkedIn: "https://www.linkedin.com/in/aayushi-gupta-20455a303/",
   },
   {
-    firstName: "Gnana Sai",
-    lastName: "Pendyala",
-    position: "Team Manager (Technical)",
-    imageUrl: GnanaSaiImage,
-    linkedIn: "https://www.linkedin.com/in/gnana-sai-pendyala?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    firstName: "Shashank",
+    lastName: "Sunil Rao",
+    position: "Team Manager",
+    imageUrl: ShashankImage,
+    linkedIn: "https://www.linkedin.com/in/shashank-rao-b7140a295/",
   },
   {
-    firstName: "Urvi",
-    lastName: "Todi",
-    position: "Team Manager (Finance)",
-    imageUrl: UrviImage,
-    linkedIn: "https://www.linkedin.com/in/",
-  },
-  {
-    firstName: "Sarthak",
-    lastName: "Landge",
-    position: "Mechanical & Management",
-    imageUrl: SarthakImage,
-    linkedIn: "https://www.linkedin.com/in/sarthak-landge-7983b124b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-  },
-  {
-    firstName: "Anirudh",
-    lastName: "Agrawal",
+   firstName: "Ojasvi",
+    lastName: "Tomar",
     position: "Coding Head",
-    imageUrl: AnirudhImage,
-    linkedIn: "https://www.linkedin.com/in/anirudh-agrawal-45b02b1b4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    imageUrl: OjasviImage,
+    linkedIn: "https://www.linkedin.com/in/ojasvi-tomar-173928288/",
   },
   {
-    firstName: "Soham",
-    lastName: "Ghodke",
-    position: "Research and IP Head",
-    imageUrl: SohamImage,
-    linkedIn: "https://www.linkedin.com/in/soham-ghodke-266767295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    firstName: "Kartikey",
+    lastName: "Rakesh Rathod",
+    position: "Mechanical Head",
+    imageUrl: KartikeyImage,
+    linkedIn: "https://www.linkedin.com/in/kartikey-rakesh-rathod-403724284/",
   },
   {
-    firstName: "Aditya",
-    lastName: "Wadgaonkar",
-    position: "Simulations Head",
-    imageUrl: AdityaImage,
-    linkedIn: "https://www.linkedin.com/in/aditya-wadgaonkar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    firstName: "Shreyansh",
+    lastName: "Shrivastava",
+    position: "Electronics Head",
+    imageUrl: ShreyanshImage,
+    linkedIn: "https://www.linkedin.com/in/shreyansh-shrivastava-550a12376/",
+  },
+  {
+    firstName: "Shraddha",
+    lastName: "Ajish Nair",
+    position: "Research Head",
+    imageUrl: SharaddhaImage,
+    linkedIn: "https://www.linkedin.com/in/shraddhaajishnair/",
+  },
+  {
+    firstName: "Samagya",
+    lastName: "Sharma",
+    position: "Management Head",
+    imageUrl: SamagyaImage,
+    linkedIn: "https://www.linkedin.com/in/samagya-sharma-318282279/",
   },
 ];
 
 
 
   const codingTeam = [
-  "Aditya Wadgaonkar", "Anirudh Agrawal", "Gnana Sai", "Soham Ghodke", 
-  "Ajitha Chalasani", "Anisha Deb", "B. Yamini Prabha", "Ojasvi Tomar", 
-  "Pisupati Rama Sridhut", "Mohak Singhal", "Shashank Rao", "Vinay Chilakamarri",
+  "Ojasvi Tomar", "Shashank Rao", "Dipen B", "Abhyuday Gandhi", "Yampati Neha Reddy", "Aashvi Budia","Adarsh P Nayak " 
 ];
 
   const electronicsTeam = [
-  "Akshay Prabhu", "Urvi Todi", "Aayushi Gupta", "Sai Khyati Chaganti", 
-  "Shreyansh Shrivastava", "Susmrithi N Rishi", "Vatsal Jindal", 
-  "Venezia Christy Lewis","Sharaddha Nair"
+  "Aayushi Gupta", "Shreyansh Shrivastava","Sharaddha Nair",  "Arnav Varshney","Ananth Garg","Shreyas Arya Jaiswal","Shreeya Das"
 ];
 
   const mechanicalTeam = [
-  "Sarthak Satpal", "Harshini S", "Kartikey Rakesh Rathod", 
-  "S Shankar Shrivas", "Samagya Sharma","Tarakesh Srikanthan", "Yogesh Kumar"
+  "Kartikey Rakesh Rathod", "S Shankar Shrivas", "Samagya Sharma","Gopal D Baindur","Swaroop Sajjan","Kriday Sharaff"
 ];
 
-  const managementTeam = [ "Sarthak Satpal","Urvi Todi","B. Yamini Prabha","Ajitha Chalasani","Susmrithi N Rishi"];
+  const managementTeam = [ "Samagya Sharma","Shashank Rao","Aayushi Gupta"];
 
 
  const BoardMembersByYear = {
+  2025:[
+    {
+      firstName: "Akshay",
+      lastName: "Gopathi",
+      position: "Team Leader",
+      imageUrl: AkshayImage,
+      linkedIn: "https://www.linkedin.com/in/akshayy49?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+    },
+    {
+      firstName: "Gnana Sai",
+      lastName: "Pendyala",
+      position: "Team Manager (Technical)",
+      imageUrl: GnanaSaiImage,
+      linkedIn: "https://www.linkedin.com/in/gnana-sai-pendyala?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    },
+    {
+      firstName: "Urvi",
+      lastName: "Todi",
+      position: "Team Manager (Finance)",
+      imageUrl: UrviImage,
+      linkedIn: "https://www.linkedin.com/in/",
+    },
+    {
+      firstName: "Sarthak",
+      lastName: "Landge",
+      position: "Mechanical & Management",
+      imageUrl: SarthakImage,
+      linkedIn: "https://www.linkedin.com/in/sarthak-landge-7983b124b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    },
+    {
+      firstName: "Anirudh",
+      lastName: "Agrawal",
+      position: "Coding Head",
+      imageUrl: AnirudhImage,
+      linkedIn: "https://www.linkedin.com/in/anirudh-agrawal-45b02b1b4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    },
+    {
+      firstName: "Soham",
+      lastName: "Ghodke",
+      position: "Research and IP Head",
+      imageUrl: SohamImage,
+      linkedIn: "https://www.linkedin.com/in/soham-ghodke-266767295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    },
+    {
+      firstName: "Aditya",
+      lastName: "Wadgaonkar",
+      position: "Simulations Head",
+      imageUrl: AdityaImage,
+      linkedIn: "https://www.linkedin.com/in/aditya-wadgaonkar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+    },
+  ],
   2024:[
     {
       firstName: "Ayush",
