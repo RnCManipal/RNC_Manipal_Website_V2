@@ -1,8 +1,20 @@
-# React + Vite
+# Robotics & Circuits Website — Deployment Guide
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Install dependencies
+npm install
 
-Currently, two official plugins are available:
+## Develop locally
+npm run dev
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Deploy (update live website)
+1. FIRST Commit + push changes to main
+2. ONLY AFTER THE FIRST STEP Run:
+   npm run deploy
+
+This builds and deploys the site to `gh-pages` for:
+https://roboticsandcircuits.com
+
+## Notes
+- Do NOT commit `dist/`
+- Source code is on `main`
+- Built site is on `gh-pages`
