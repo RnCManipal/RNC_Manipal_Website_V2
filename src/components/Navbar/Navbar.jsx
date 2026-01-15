@@ -99,7 +99,7 @@ const Navbar = () => {
                 }
                 onClick={() => setIsMenuOpen(false)}
               >
-                2024
+                2025
               </Link>
               <Link
                 to="/team/alumni"

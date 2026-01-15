@@ -145,7 +145,58 @@ const teamMembers = [
 
 
  const BoardMembersByYear = {
-  2025:[
+  2026: [
+    {
+      firstName: "Aayushi",
+      lastName: "Gupta",
+      position: "Team Leader",
+      imageUrl: AayushiImage,
+      linkedIn: "https://www.linkedin.com/in/aayushi-gupta-20455a303/",
+    },
+    {
+      firstName: "Shashank",
+      lastName: "Sunil Rao",
+      position: "Team Manager",
+      imageUrl: ShashankImage,
+      linkedIn: "https://www.linkedin.com/in/shashank-rao-b7140a295/",
+    },
+    {
+     firstName: "Ojasvi",
+      lastName: "Tomar",
+      position: "Coding Head",
+      imageUrl: OjasviImage,
+      linkedIn: "https://www.linkedin.com/in/ojasvi-tomar-173928288/",
+    },
+    {
+      firstName: "Kartikey",
+      lastName: "Rakesh Rathod",
+      position: "Mechanical Head",
+      imageUrl: KartikeyImage,
+      linkedIn: "https://www.linkedin.com/in/kartikey-rakesh-rathod-403724284/",
+    },
+    {
+      firstName: "Shreyansh",
+      lastName: "Shrivastava",
+      position: "Electronics Head",
+      imageUrl: ShreyanshImage,
+      linkedIn: "https://www.linkedin.com/in/shreyansh-shrivastava-550a12376/",
+    },
+    {
+      firstName: "Shraddha",
+      lastName: "Ajish Nair",
+      position: "Research Head",
+      imageUrl: SharaddhaImage,
+      linkedIn: "https://www.linkedin.com/in/shraddhaajishnair/",
+    },
+    {
+      firstName: "Samagya",
+      lastName: "Sharma",
+      position: "Management Head",
+      imageUrl: SamagyaImage,
+      linkedIn: "https://www.linkedin.com/in/samagya-sharma-318282279/",
+    },
+  ],
+  2025: [
     {
       firstName: "Akshay",
       lastName: "Gopathi",
